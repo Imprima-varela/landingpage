@@ -2309,6 +2309,10 @@ a:hover.back-to-top {
 	margin-top: 10px;
 }
 
+.slider img {
+	width: 100%;
+}
+
 .slider-nav ul {
   list-style: none;
   margin: 0;

@@ -1,0 +1,22 @@
+{
+  "name": "varela",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mauricio503/ladingPageVarela.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mauricio503/ladingPageVarela/issues"
+  },
+  "homepage": "https://github.com/Mauricio503/ladingPageVarela#readme",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
