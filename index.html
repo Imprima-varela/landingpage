@@ -52,16 +52,15 @@
         <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">humbleit</a> -->
 
         <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a>
 
         <!-- Mobile Menu Toggle Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-awesome fas fa-bars"></span>
             <span class="navbar-toggler-awesome fas fa-times"></span>
         </button>
         <!-- end of mobile menu toggle button -->
 
-        <div class="container collapse navbar-collapse" id="navbarsExampleDefault">
+        <div class="nav-wrapper container collapse navbar-collapse collapsed" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link page-scroll inicio active" href="#inicio">INICIO<span class="sr-only">(current)</span></a>
@@ -85,14 +84,6 @@
     </nav> <!-- end of navbar -->
     <!-- end of navbar -->
 
-
-
-
-
-
-
-
-
     <!-- Header -->
     <section id="inicio" class="inicio">
         <div class="video-container">
@@ -100,15 +91,6 @@
         </div>
     </section> <!-- end of header -->
     <!-- end of header -->
-
-
-
-
-
-
-
-
-
 
 
     <!--<div class="arrow">
@@ -120,7 +102,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>VALORES 🤔</h2>
+                    <h2>VALORES</h2>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -151,15 +133,16 @@
 
                                 <div class="card left-pane">
                                     <div class="card-body">
-                                        <div class="card-hidden">
-                                            
+                                        <div class="card-icon">
+                                            <i class="bi bi-currency-dollar" style="font-size: 2em;"></i>
                                         </div>
+                                       
                                         <div class="text-wrapper">
                                             <h4 class="card-title">Preço</h4>
                                             <p>Conseguimos fazer um preço ótimo mantendo a qualidade.</p>
                                         </div>
-                                        <div class="card-icon">
-                                            <i class="bi bi-currency-dollar" style="font-size: 2em;"></i>
+                                        <div class="card-hidden">
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -185,16 +168,16 @@
 
                                 <div class="card left-pane">
                                     <div class="card-body">
-                                        <div class="card-hidden">
-                                            
+                                        <div class="card-icon">
+                                            <i class="bi bi-emoji-smile" style="font-size: 2em;"></i>
                                         </div>
                                         <div class="text-wrapper">
                                             <h4 class="card-title">Comprometimento</h4>
                                             <p>Nos ateremos às nossas entregas e manteremos comunicação transparente com o máximo de comprometimento possível em uma parceria.
                                             </p>
                                         </div>
-                                        <div class="card-icon">
-                                            <i class="bi bi-emoji-smile" style="font-size: 2em;"></i>
+                                        <div class="card-hidden">
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -231,7 +214,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h2>Uma trajetória de criações 👀</h2>
+                            <h2>Uma trajetória de criações</h2>
                             <div class="p-heading p-large">Ao longo dos anos, tive a oportunidade de trabalhar em diversos projetos incríveis que me permitiram crescer e me consagrar neste setor competitivo. Espero que você goste de ver os meus projetos da mesma forma que eu gostei de trabalhar neles. Confira os detalhes e não deixe de entrar em contato, caso queira obter mais informações.
                             </div>
                         </div> <!-- end of col -->
@@ -243,7 +226,7 @@
     <!-- end of video -->
 
     <!-- IMAGENS -->
-    <section id="imagens" style="background:#1f1c3f">
+    <section id="imagens">
     <div class="container-slide"> 
         <div class="row">
             <div class="col-lg-12" style="text-align: center;">
@@ -263,22 +246,10 @@
         <nav class="slider-nav">
           <ul>
             <li class="">
-              <button class="previous-slide arrow">
-                <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
-                      </svg>
-                </span>
-              </button>
+                <i class="bi bi-arrow-left-circle previous-slide arrow-button previous-slide"></i>
             </li>
             <li class="">
-              <button class="next-slide arrow">
-                <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                      </svg>
-                </span>
-              </button>
+                <i class="bi bi-arrow-right-circle previous-slide arrow-button next-slide"></i>
             </li>
           </ul>
         </nav>
@@ -289,56 +260,55 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>CONTATO 🤙</h2>
+                    <h2>CONTATO</h2>
+                </div>
+                <div class="col-lg-6">
                     <ul class="list-unstyled li-space-lg">
                         <li class="address">Não hesite em nos ligar ou use o formulário de contato abaixo.</li>
-                        <!--<li><i class="fas fa-map-marker-alt"></i>22 Innovative, San Francisco, CA 94043, US</li> -->
-                        <li><i class="fas fa-phone"></i><a class="blue" href="tel:49988855836">(49) 98885-5836</a></li>
-                        <li><i class="fas fa-envelope"></i><a class="blue" href="mailto:contato@humbleit.com">contato@humbleit.com.br</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i>R. Rio de Janeiro, 2244 - Pinheirinho, Chapecó - SC, 89806-732</li>
+                        <li><i class="fas fa-phone"></i><a class="blue" href="tel:49988098337">(49) 98809-8337</a></li>
+                        <li><i class="fas fa-envelope"></i><a class="blue" href="mailto:comercial@imprimavarela.com.br">comercial@imprimavarela.com.br</a></li>
                     </ul>
+                     <!-- Contact Form -->
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control-input" id="cname" required="">
+                                <label class="label-control" for="cname">Nome</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="email" class="form-control-input" id="cemail" required="">
+                                <label class="label-control" for="cemail">Seu melhor Email</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="phone" id="cphone" class="form-control-input" required="">
+                                <label class="label-control" for="cphone">Seu telefone/WhatsApp</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control-textarea" name="message" id="cmessage" required=""></textarea>
+                                <label class="label-control" for="cmessage">Sua mensagem</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" value="button" onclick="submitEmail()" class="form-control-submit-button">ENVIAR MENSAGEM</button>
+                            </div>
+                            <div class="form-message">
+                                <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                            </div>
+                        <div class="alert alert-success" role="alert" id="alert_send" style="display: none;">
+                            Mensagem Enviada
+                          </div>
+                        <!-- end of contact form -->
                 </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3552.126936587339!2d-52.597459584415645!3d-27.08929320711759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b6ecd7fc38f9%3A0x4c6f2d58ab592fb5!2sR.%20Rio%20de%20Janeiro%2C%202244%20-%20Pinheirinho%2C%20Chapec%C3%B3%20-%20SC%2C%2089806-732!5e0!3m2!1spt-BR!2sbr!4v1656373530842!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div> <!-- end of row -->
             <div class="row">
-                <div class="col-lg-6 offset-lg-3">
+                <div class="col-lg-6">
 
-                    <!-- Contact Form -->
-                    <!-- <form action="https://formsubmit.co/contato@humbleit.com.br" method="POST">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="https://humbleit.com.br/"> -->
-
-                        <form action="https://api.staticforms.xyz/submit" method="post">
-                        <div class="form-group">
-                            <input type="text" name="name" class="form-control-input" id="cname" required="">
-                            <label class="label-control" for="cname">Nome</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="email" class="form-control-input" id="cemail" required="">
-                            <label class="label-control" for="cemail">Seu melhor Email</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="phone" id="cphone" class="form-control-input" required="">
-                            <label class="label-control" for="cphone">Seu telefone/WhatsApp</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" name="message" id="cmessage" required=""></textarea>
-                            <label class="label-control" for="cmessage">Sua mensagem</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <input type="hidden" name="accessKey" value="2f16b14d-bfca-4078-8133-06eeeeea67c9">
-                        <input type="hidden" name="subject" value="EMAIL FORM - HUMBLEIT.COM.BR">
-                        <input type="hidden" name="replyTo" value="@">
-                        <input type="hidden" name="redirectTo" value="https://humbleit.com.br">
-                        <div class="form-group">
-                            <button type="submit" value="submit" class="form-control-submit-button">ENVIAR MENSAGEM</button>
-                        </div>
-                        <div class="form-message">
-                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
-                        </div>
-                    </form>
-                    <!-- end of contact form -->
+                   
 
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -346,7 +316,27 @@
     </section> <!-- end of form -->
     <!-- end of contact -->
 
-
+<script>
+    function submitEmail(){
+        fetch("https://backend.criasystem.tech/contact",{
+        method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                emailTo: "comercial@imprimavarela.com.br",
+                name: document.getElementById("cname").value,
+                email: document.getElementById("cemail").value,
+                message: "Celular: "+document.getElementById("cphone").value+" "+document.getElementById("cmessage").value
+            })}).then(()=>{
+                document.getElementById("cname").value = "";
+                document.getElementById("cemail").value = "";
+                document.getElementById("cphone").value = "";
+                document.getElementById("cmessage").value = "";
+                document.getElementById("alert_send").style.display = "block";
+            })
+    }
+</script>
     <!-- Footer -->
     <div class="footer">
         <div class="container">
@@ -360,38 +350,6 @@
 
                 <div class="col-md-4">
                     <div class="footer-col last">
-                        <h1>😎</h1>
-                        <h4>Nos acompanhe em nossas redes sociais</h4>
-                        <span class="fa-stack">
-                            <a href="https://www.facebook.com/humbleitSoftware">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-facebook-f fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <!--<span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x"></i>
-                            </a>
-                        </span> 
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-google-plus-g fa-stack-1x"></i>
-                            </a>
-                        </span> -->
-                        <span class="fa-stack">
-                            <a href="https://www.instagram.com/humbleitsoftware">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <!--<span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                            </a>
-                        </span> -->
                     </div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -405,7 +363,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">© 2022 Humbleit - Desenvolvido com humildade por <a href="http://www.humbleit.com.br">humbleit</a></p>
+                    <p class="p-small">© <a href="https://www.criasystem.tech" target="_blank">Cria System</a></p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
