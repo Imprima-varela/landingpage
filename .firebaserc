@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "imprimavarela"
-  }
+    "default": "imprimavarela",
+    "imprima-varela": "imprima-varela"
+  },
+  "targets": {}
 }

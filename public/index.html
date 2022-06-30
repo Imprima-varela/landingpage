@@ -271,35 +271,38 @@
                         <li><i class="fas fa-envelope"></i><a class="blue" href="mailto:comercial@imprimavarela.com.br">comercial@imprimavarela.com.br</a></li>
                     </ul>
                      <!-- Contact Form -->
-                            <div class="form-group">
-                                <input type="text" name="name" class="form-control-input" id="cname" required="">
-                                <label class="label-control" for="cname">Nome</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="email" class="form-control-input" id="cemail" required="">
-                                <label class="label-control" for="cemail">Seu melhor Email</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="phone" id="cphone" class="form-control-input" required="">
-                                <label class="label-control" for="cphone">Seu telefone/WhatsApp</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control-textarea" name="message" id="cmessage" required=""></textarea>
-                                <label class="label-control" for="cmessage">Sua mensagem</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <button type="button" value="button" onclick="submitEmail()" class="form-control-submit-button">ENVIAR MENSAGEM</button>
-                            </div>
-                            <div class="form-message">
-                                <div id="cmsgSubmit" class="h3 text-center hidden"></div>
-                            </div>
-                        <div class="alert alert-success" role="alert" id="alert_send" style="display: none;">
-                            Mensagem Enviada
-                          </div>
+                     <form action="https://api.staticforms.xyz/submit" method="post">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control-input" id="cname" required>
+                            <label class="label-control" for="cname">Nome</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="email" class="form-control-input" id="cemail" required>
+                            <label class="label-control" for="cemail">Seu melhor Email</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="phone" id="cphone" class="form-control-input" required>
+                            <label class="label-control" for="cphone">Seu telefone/WhatsApp</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control-textarea" name="message" id="cmessage" required></textarea>
+                            <label class="label-control" for="cmessage">Sua mensagem</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <input type="hidden" name="accessKey" value="2f16b14d-bfca-4078-8133-06eeeeea67c9">
+                        <input type="hidden" name="subject" value="EMAIL FORM - HUMBLEIT.COM.BR" />
+                        <input type="hidden" name="replyTo" value="@">
+                        <input type="hidden" name="redirectTo" value="https://humbleit.com.br">
+                        <div class="form-group">
+                            <button type="submit" value="submit" class="form-control-submit-button">ENVIAR MENSAGEM</button>
+                        </div>
+                        <div class="form-message">
+                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                        </div>
+                    </form>
                         <!-- end of contact form -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
@@ -338,38 +341,70 @@
             })
     }
 </script>
-    <!-- Footer -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <!--<div class="footer-col">
-                        <h4>Sobre a Humbleit</h4>
-                        <p>Somos apaixonados por criar as melhores soluções para o seu negócio.</p>
-                    </div> -->
-                </div> <!-- end of col -->
-
-                <div class="col-md-4">
-                    <div class="footer-col last">
-                    </div>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of footer -->
-    <!-- end of footer -->
-
-
-    <!-- Copyright -->
-    <div class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">© <a href="https://www.criasystem.tech" target="_blank">Cria System</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of copyright -->
-    <!-- end of copyright -->
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <!--<div class="footer-col">
+                            <h4>Sobre a Humbleit</h4>
+                            <p>Somos apaixonados por criar as melhores soluções para o seu negócio.</p>
+                        </div> -->
+                    </div> <!-- end of col -->
+    
+                    <div class="col-md-4">
+                        <div class="footer-col last">
+                            <h4>Nos acompanhe em nossas redes sociais</h4>
+                            <span class="fa-stack">
+                                <a href="https://www.facebook.com/imprimavarela.com.br">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <!--<span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span> 
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-google-plus-g fa-stack-1x"></i>
+                                </a>
+                            </span> -->
+                            <span class="fa-stack">
+                                <a href="https://www.instagram.com/imprimavarela/">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-instagram fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <!--<span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                                </a>
+                            </span> -->
+                        </div>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of footer -->
+        <!-- end of footer -->
+    
+    
+        <!-- Copyright -->
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="p-small">© 2022 Humbleit - Desenvolvido com humildade por <a
+                                href="http://www.humbleit.com.br">humbleit</a></p>
+                    </div> <!-- end of col -->
+                </div> <!-- enf of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of copyright -->
+        <!-- end of copyright -->
 
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
